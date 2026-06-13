@@ -1,80 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NinaList
 
-## Getting Started
+NinaList is a personal anime, manga, manhwa, and manhua tracking platform built with Next.js, Supabase, and the Jikan API. The application helps users organize their watchlists and reading lists, track progress, view statistics, and discover titles through an integrated MyAnimeList search experience.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 📚 Personal Library Management
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Add anime, manga, manhwa, and manhua to a personal collection
+* Update watch/read progress
+* Manage status (Watching, Completed, Plan to Watch)
+* Rate titles and track personal preferences
 
-## Supabase Setup
+### 🔍 MyAnimeList Search Integration
 
-This app already uses Supabase through `lib/supabase.ts` and `lib/supabaseService.ts`. To connect it to your project:
+* Powered by the Jikan API
+* Search directly from MyAnimeList
+* Automatic title suggestions
+* Automatic cover image retrieval
+* Faster and more accurate data entry
 
-1. Create a Supabase project.
-2. Copy your project URL and anon public key from the Supabase dashboard.
-3. Add them to a local env file named `.env.local`:
+### 📊 Statistics Dashboard
 
-```bash
-NEXT_PUBLIC_SUPABASE_URL=your-project-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-```
+* View collection analytics
+* Track completed titles
+* Monitor ongoing series
+* Analyze ratings and progress
+* Visualize personal media consumption
 
-4. Run the SQL in `supabase_schema.sql` in the Supabase SQL editor.
-5. Restart the Next.js dev server after saving the env file.
+### 💡 Community Suggestions
 
-If those env vars are missing, the app falls back to local mock data in the browser.
+* Submit recommendations
+* Vote on suggestions
+* Discover new series from other users
 
-## Admin Sign In
+### 🔒 Admin System
 
-Set these variables in `.env.local` for the admin login flow:
+* Protected admin authentication
+* Secure session management
+* Administrative collection management
+* Environment-variable-based credential protection
 
-```bash
-ADMIN_EMAIL=your-admin-email
-ADMIN_PASSWORD=your-admin-password
-ADMIN_SESSION_SECRET=your-long-random-secret-at-least-32-characters
-SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
-```
+### ☁️ Cloud Backend
 
-The `/admin` route is protected and will redirect to `/signin` unless the signed session cookie is present. In production, `ADMIN_SESSION_SECRET` must be at least 32 characters so stale or weak admin sessions fail closed.
+* Supabase PostgreSQL database
+* Secure Row Level Security (RLS)
+* Persistent cloud storage
+* API-driven architecture
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) for app typography.
+### Frontend
 
-## Learn More
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+### Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Next.js API Routes
+* Supabase
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Database
 
-## Deploy on Vercel
+* PostgreSQL (Supabase)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### External APIs
 
-Set these environment variables in Vercel before deploying production:
+* Jikan API (MyAnimeList)
 
-```bash
-NEXT_PUBLIC_SUPABASE_URL=your-project-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
-ADMIN_EMAIL=your-admin-email
-ADMIN_PASSWORD=your-admin-password
-ADMIN_SESSION_SECRET=your-long-random-secret-at-least-32-characters
-```
+### Deployment
 
-Do not commit `.env.local`; this repo ignores env files by default.
+* Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Key Learning Outcomes
+
+This project demonstrates:
+
+* Full-stack web development with Next.js
+* Database integration using Supabase
+* Authentication and authorization
+* Third-party API integration
+* Responsive UI development
+* Data visualization and analytics
+* Cloud deployment workflows
+* Environment variable and secret management
+
+## Future Improvements
+
+* User accounts and profiles
+* Import/export watchlists
+* AniList synchronization
+* Advanced filtering and search
+* Mobile application version
+
+
+## License
+
+This project is intended for educational and personal portfolio purposes.
+
+---
+
+Built with by Nina 😸.
