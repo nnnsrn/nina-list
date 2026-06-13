@@ -50,8 +50,6 @@ export default function SignInForm({ nextPath }: SignInFormProps) {
         <section className="relative overflow-hidden rounded-4xl border border-primary/15 bg-surface-container-low/75 backdrop-blur-2xl p-8 md:p-12 shadow-[0_30px_120px_rgba(0,0,0,0.45)]">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,229,255,0.12),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(20,184,166,0.08),transparent_30%)] pointer-events-none" />
           <div className="relative z-10 flex items-center gap-3 mb-8">
-            <div className="w-12 h-12 rounded-full bg-primary-container/15 flex items-center justify-center border border-primary/25">
-            </div>
             <div>
               <p className="font-label-md text-xs tracking-[0.3em] text-primary-container uppercase">NinaList</p>
               <h1 className="font-plus-jakarta text-2xl md:text-3xl font-bold text-on-surface">Admin Access</h1>
@@ -59,37 +57,18 @@ export default function SignInForm({ nextPath }: SignInFormProps) {
           </div>
 
           <div className="relative z-10 max-w-xl">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 border border-primary-container/20 text-primary-container text-xs font-bold uppercase tracking-wider mb-5">
-              Restricted sign in
-            </span>
             <h2 className="font-plus-jakarta text-4xl md:text-6xl font-bold leading-tight text-on-surface mb-5">
-              One account. Full control.
+              One account to rule them all
             </h2>
             <p className="font-manrope text-base md:text-lg text-on-surface-variant leading-relaxed max-w-lg">
-              This dashboard is reserved for the single administrator of NinaList. Use your admin email and password to access collection management, suggestions, and system tools.
+              If you are not the admin, please return to the public site.
             </p>
-
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-              <div className="rounded-2xl border border-outline-variant/15 bg-background/30 p-4">
-                <p className="text-on-surface-variant mb-1">Protected area</p>
-                <p className="font-semibold text-on-surface">Admin only</p>
-              </div>
-              <div className="rounded-2xl border border-outline-variant/15 bg-background/30 p-4">
-                <p className="text-on-surface-variant mb-1">Access level</p>
-                <p className="font-semibold text-on-surface">Write enabled</p>
-              </div>
-              <div className="rounded-2xl border border-outline-variant/15 bg-background/30 p-4">
-                <p className="text-on-surface-variant mb-1">Fallback</p>
-                <p className="font-semibold text-on-surface">Visitors stay public</p>
-              </div>
-            </div>
           </div>
         </section>
 
         <section className="rounded-4xl border border-outline-variant/15 bg-surface-container/80 backdrop-blur-2xl p-8 md:p-10 shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
           <div className="mb-8">
             <h3 className="font-plus-jakarta text-2xl font-bold text-on-surface mb-2">Sign in to the dashboard</h3>
-            <p className="font-manrope text-sm text-on-surface-variant">Enter the credentials configured in your local environment.</p>
           </div>
 
           <form className="space-y-5" onSubmit={handleSubmit}>
@@ -100,7 +79,6 @@ export default function SignInForm({ nextPath }: SignInFormProps) {
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 autoComplete="email"
-                placeholder="admin@example.com"
                 className="w-full rounded-2xl bg-background/70 border border-outline-variant/25 px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/20 transition-all"
               />
             </label>
@@ -112,7 +90,6 @@ export default function SignInForm({ nextPath }: SignInFormProps) {
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
                 autoComplete="current-password"
-                placeholder="Your private admin password"
                 className="w-full rounded-2xl bg-background/70 border border-outline-variant/25 px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/20 transition-all"
               />
             </label>
