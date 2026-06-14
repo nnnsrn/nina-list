@@ -64,27 +64,7 @@ export default function Navbar() {
 
         {/* Search & Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <div className="relative group">
-            <input
-              type="text"
-              placeholder="Search database..."
-              className="bg-surface-container-low border border-outline-variant/20 rounded-full py-2 pl-4 pr-10 text-sm focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 w-48 transition-all group-hover:border-outline-variant/50"
-            />
-            <span className="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-lg">
-              search
-            </span>
-          </div>
-          <button className="w-10 h-10 rounded-full overflow-hidden border border-primary/20 hover:border-primary/60 transition-all">
-            <img
-              src="https://lh3.googleusercontent.com/a/default-user=s96-c"
-              alt="Profile"
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // fallback if image fails
-                e.currentTarget.src = "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y";
-              }}
-            />
-          </button>
+          
         </div>
 
         {/* Mobile Menu Button */}
