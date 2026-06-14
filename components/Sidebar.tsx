@@ -42,17 +42,10 @@ export default function Sidebar() {
       <nav className="hidden md:flex flex-col fixed left-0 top-0 h-full w-64 bg-surface-container-lowest/80 backdrop-blur-2xl border-r border-outline-variant/10 shadow-2xl py-8 z-40">
         {/* Brand Header (icon removed) */}
         <div className="px-6 mb-10 flex items-center gap-4">
-          <div className="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center border border-primary/30">
-          </div>
-          <div>
-            <h1 className="font-plus-jakarta text-md font-bold tracking-tight text-primary">
-              {loading ? "NinaList" : isAdmin ? "NinaList Admin" : "NinaList"}
-            </h1>
-          </div>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex-1 flex flex-col gap-2 overflow-y-auto">
+        <div className="flex-1 flex flex-col gap-2 overflow-y-auto overflow-x-hidden">
           {filteredLinks.map((link) => {
             const isActive = pathname === link.href || (link.href.includes("?") && pathname + link.href.substring(link.href.indexOf("?")) === link.href);
             return (

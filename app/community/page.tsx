@@ -149,7 +149,7 @@ export default function CommunityPage() {
           <div className="flex gap-4 w-full md:w-auto">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="w-full md:w-auto bg-gradient-to-r from-primary-fixed to-primary-container text-on-primary-container font-label-md text-sm uppercase tracking-wider px-6 py-3 rounded-full flex items-center justify-center gap-2 hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all font-bold hover:-translate-y-0.5"
+              className="w-full md:w-auto bg-linear-to-r from-primary-fixed to-primary-container text-on-primary-container font-label-md text-sm uppercase tracking-wider px-6 py-3 rounded-full flex items-center justify-center gap-2 hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all font-bold hover:-translate-y-0.5"
             >
               <span className="material-symbols-outlined text-lg">add</span>
               Suggest Title

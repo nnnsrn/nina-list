@@ -36,7 +36,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+      <body className="min-h-full flex flex-col bg-background text-on-background overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
         {children}
       </body>
     </html>
