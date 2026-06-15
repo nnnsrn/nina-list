@@ -53,7 +53,7 @@ export default function AdminDashboardPage() {
               Welcome Back, <span className="text-gradient-cyan animate-pulse-slow">Nina</span>
             </h2>
             <p className="font-manrope text-base md:text-lg text-on-surface-variant">
-              Here is your operational overview for today.
+              Here is your overview for today.
             </p>
           </div>
           <div className="flex gap-4">
@@ -64,13 +64,6 @@ export default function AdminDashboardPage() {
               <span className="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">add</span>
               <span className="font-label-md text-sm text-primary font-bold">New Entry</span>
             </Link>
-            <button className="glass-panel w-12 h-12 rounded-full flex items-center justify-center hover:bg-surface-variant/30 transition-all border border-outline-variant/20 text-on-surface">
-              <span className="material-symbols-outlined">search</span>
-            </button>
-            <button className="glass-panel w-12 h-12 rounded-full flex items-center justify-center hover:bg-surface-variant/30 transition-all border border-outline-variant/20 relative text-on-surface">
-              <span className="material-symbols-outlined">notifications</span>
-              <span className="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,229,255,0.8)] animate-pulse"></span>
-            </button>
           </div>
         </header>
 
